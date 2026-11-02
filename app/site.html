@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#83bdff">
+  <meta name="description" content="Maoni is a Nairobi discussion club and third space for open conversations, games and community. Find your next Maoni, read the essays and play the game.">
+  <meta property="og:title" content="Maoni — Our Maoni. Our Opinion.">
+  <meta property="og:description" content="Good conversations. Games. Hot takes. Healthy disagreement. A discussion club by Kata Form.">
+  <meta property="og:image" content="https://maoni-community.fastcord1.chatgpt.site/assets/people-talking.jpg">
+  <title>Maoni — Our Maoni. Our Opinion.</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/headline.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/retro.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand chrome-brand" href="#/" aria-label="Maoni home"><img src="/assets/maoni-logo.png" alt="Maoni — Opinion"><span class="brand-caption">OUR MAONI. OUR OPINION.</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">MENU <span>☰</span></button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a data-nav="home" href="#/">home</a>
+        <a data-nav="conversations" href="#/conversations">the conversations</a>
+        <a data-nav="wall" href="#/wall">the maoni wall</a>
+        <a data-nav="essays" href="#/essays">our maoni</a>
+        <a data-nav="community" href="#/community">the community</a>
+      </nav>
+      <div class="header-actions"><a class="button pink compact" href="#/events">GET TICKETS <span>↗</span></a><a class="game-nav" href="https://whats-your-maoni.fastcord1.chatgpt.site" target="_blank" rel="noopener">PLAY MAONI ↗</a></div>
+    </div>
+  </header>
+  <section id="app-window" class="retro-app-window">
+    <div class="app-chrome">
+      <div class="retro-titlebar"><span id="app-window-title">Maoni Browser</span><div class="window-controls"><button data-app-control="minimize" aria-label="Minimize page">_</button><button data-app-control="maximize" aria-label="Maximize page">□</button><button data-app-control="close" aria-label="Close page">×</button></div></div>
+      <div class="retro-browser-menu"><a href="#/">File</a><a href="#/conversations">Explore</a><a href="#/wall">Leave a Maoni</a><button data-desktop-action="help">Help</button></div>
+      <div class="retro-address-bar"><a class="retro-back" href="#/" aria-label="Back to desktop">← Desktop</a><span>Address</span><span id="desktop-address">maoni://home</span><a href="https://whats-your-maoni.fastcord1.chatgpt.site" target="_blank" rel="noopener">Play ↗</a></div>
+    </div>
+    <main id="main-content" tabindex="-1"></main>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-top"><a class="brand chrome-brand footer-brand" href="#/" aria-label="Maoni home"><img src="/assets/maoni-logo.png" alt="Maoni — Opinion"><span class="brand-caption">OUR MAONI. OUR OPINION.</span></a><p>A discussion club.<br>A third space.<br>A reason to meet.</p><div class="footer-links"><a href="#/events">COME TO A MAONI ↗</a><a href="#/community">MEET THE COMMUNITY ↗</a><a href="https://whats-your-maoni.fastcord1.chatgpt.site" target="_blank" rel="noopener">PLAY THE GAME ↗</a></div></div>
+    <div class="footer-bottom"><span>A DISCUSSION CLUB BY KATA FORM</span><span>NAIROBI, KENYA <i class="tiny-star">✳</i> OUR MAONI. OUR OPINION.</span><button class="text-button" data-action="privacy">ABOUT YOUR DATA</button></div>
+  </footer>
+  <aside id="start-menu" class="start-menu" hidden aria-label="Maoni Start menu"><div class="start-menu-side">Maoni<span>OS</span></div><div class="start-menu-items"><a href="#/">home</a><a href="#/conversations">the conversations</a><a href="#/wall">the maoni wall</a><a href="#/essays">our maoni</a><a href="#/community">the community</a><a href="#/events">Get Tickets</a><a href="https://whats-your-maoni.fastcord1.chatgpt.site" target="_blank" rel="noopener">Play Maoni ↗</a><hr><button data-desktop-action="new-note">New sticky note</button><button data-desktop-action="show-windows">Show all windows</button><button data-desktop-action="help">About Maoni OS</button></div></aside>
+  <div class="desktop-taskbar"><button id="start-button" aria-expanded="false" aria-controls="start-menu"><span class="start-mark" aria-hidden="true">M</span><b>Start</b></button><span class="taskbar-divider"></span><button id="task-browser" class="task-button" data-desktop-action="restore-app">Maoni Desktop</button><button class="task-button notes-task" data-desktop-action="show-notes">Sticky Notes</button><button class="taskbar-new-note" data-desktop-action="new-note" aria-label="New sticky note">+</button><div class="taskbar-tray"><span class="tray-spark" aria-hidden="true">✳</span><time id="desktop-clock" aria-label="Nairobi time"></time><button data-desktop-action="show-desktop" aria-label="Show desktop" class="show-desktop-button"></button></div></div>
+  <dialog id="photo-dialog" class="photo-dialog" aria-label="Original Maoni event photograph"><button class="dialog-close" data-close aria-label="Close photo">×</button><img id="full-photo" alt=""><div class="photo-toolbar"><button data-action="previous-photo" aria-label="Previous photo">←</button><p id="photo-caption"></p><button data-action="next-photo" aria-label="Next photo">→</button></div></dialog>
+  <dialog id="post-dialog" class="post-dialog" aria-labelledby="post-title"><button class="dialog-close" data-close aria-label="Close form">×</button><span class="eyebrow">THE WALL IS YOURS</span><h2 id="post-title">WHAT’S YOUR<br><span class="marker pink-marker">MAONI?</span></h2><p>A hot take. A question. Something you can’t stop thinking about.</p><form id="post-form"><label for="post-name">NAME <span>(OPTIONAL)</span></label><input id="post-name" name="name" maxlength="40" autocomplete="nickname" placeholder="Anonymous works too"><label for="post-topic">WHAT ARE WE TALKING ABOUT?</label><select id="post-topic" name="topic"><option value="Life & community">Life & community</option><option value="Politics & power">Politics & power</option><option value="Climate & land">Climate & land</option><option value="Identity & culture">Identity & culture</option></select><label for="post-text">YOUR MAONI</label><textarea id="post-text" name="text" minlength="5" maxlength="400" rows="4" required placeholder="I think…"></textarea><div class="form-meta"><span>Published on the shared Maoni Wall.</span><span id="character-count">0 / 400</span></div><label class="consent-label"><input type="checkbox" name="consent" required><span>I’m okay with this name and maoni appearing on the wall. No private details or personal attacks.</span></label><p id="post-status" class="form-status" role="status"></p><button class="button black" type="submit">PIN YOUR MAONI <span>↗</span></button></form></dialog>
+  <dialog id="film-dialog" class="film-dialog" aria-label="Maoni intro film"><button class="dialog-close" data-close aria-label="Close film">×</button><video id="maoni-film" controls playsinline preload="none" src="/assets/maoni-film.mp4"></video></dialog>
+  <dialog id="info-dialog" class="info-dialog" aria-labelledby="info-title"><button class="dialog-close" data-close aria-label="Close information">×</button><h2 id="info-title">YOUR MAONI.<br>YOUR CHOICE.</h2><p>Browsing this site does not need a community account. If you post to the wall, your chosen name, maoni and topic are stored and shown to other site visitors.</p><p>This browser keeps a random identifier so you can agree with a post once and remove your own posts. Clearing browser data removes that control. We do not collect your email through the wall.</p><p>Ticket bookings and the Maoni game open separately. Their own access and privacy settings apply.</p></dialog>
+  <dialog id="desktop-help" class="desktop-help" aria-labelledby="desktop-help-title"><div class="retro-titlebar"><span id="desktop-help-title">About Maoni OS</span><button class="desktop-help-close" data-desktop-action="close-help" aria-label="Close desktop help">×</button></div><div class="desktop-help-body"><h2>Our Maoni.<br>Our Opinion.</h2><p>A discussion club and third space in Nairobi. Made for conversations, games and finding your people.</p><p>Open the desktop icons to explore. Drag windows and notes by their title bars. A focused title bar can also move with the arrow keys.</p><p><b>Your sticky notes stay on this device.</b> Post to the Maoni Wall when you want to share with the community.</p><button class="retro-button" data-desktop-action="close-help">OK, got it.</button></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/site.js"></script>
+</body>
+</html>
